@@ -10,6 +10,8 @@ namespace RPG_console_practice
     {
         static void Main(string[] args)
         {
+            Game game = new Game();
+            game.RunGame();
         }
     }
 }
