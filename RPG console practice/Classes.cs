@@ -6,24 +6,24 @@ using System.Threading.Tasks;
 
 namespace RPG_console_practice
 {
-    class Classes
+    public class Classes
     {
-        void FighterLevel()
+        public void FighterLevel(Player player)
         {
-            int Strength = 2;
-            int Stamina = 2;
-            int Intelligence = 0;
-            int Speed = 0;
-            int Luck = 0;
+            player.Strength += 2;
+            player.Stamina += 2;
+            player.Intelligence += 0;
+            player.Speed += 0;
+            player.Luck += 0;
         }
 
-        void MageLevel()
+        public void MageLevel(Player player)
         {
-            int Strength = 0;
-            int Stamina = 2;
-            int Intelligence = 2;
-            int Speed = 0;
-            int Luck = 0;
+            player.Strength += 0;
+            player.Stamina += 2;
+            player.Intelligence += 2;
+            player.Speed += 0;
+            player.Luck += 0;
         }
     }
 }

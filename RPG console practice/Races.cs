@@ -8,28 +8,22 @@ namespace RPG_console_practice
 {
     class Races
     {
-        
-
-        public void HumanLevel()
+        public void HumanLevel(Player player)
         {
-            string race = "Human";
-
-            int Strength =+ 1;
-            int Stamina =+ 1;
-            int Intelligence =+ 1;
-            int Speed =+ 1;
-            int Luck =+ 1;
+            player.Strength += 1;
+            player.Stamina += 1;
+            player.Intelligence += 1;
+            player.Speed += 1;
+            player.Luck += 1;
         }
 
-        public void ElfLevel()
+        public void ElfLevel(Player player)
         {
-            string race = "Elf";
-
-            int Strength =+ 0;
-            int Stamina =+ 1;
-            int Intelligence =+ 2;
-            int Speed =+ 1;
-            int Luck =+ 1;
+            player.Strength += 0;
+            player.Stamina += 1;
+            player.Intelligence += 2;
+            player.Speed += 1;
+            player.Luck += 1;
         }
     }
 }
